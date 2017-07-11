@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>APPLI CHROME</title>
+	<meta charset="utf-8">
+	<link rel="shortcut icon" href="">
+	<link rel="stylesheet" href="font-awesome.css">
+	<link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+	
+		<a class="btn_access_Aggr" href="#">+</a>
+		<a class="btn_access_Dim" href="#">-</a>
+		
+		
+	<section class="content_global">
+		
+		<section class="section_formulaire">
+			<h1>Ajouter une nouvelle tache</h1>
+			<div class="bloc_global">
+				<form action="">
+					<textarea name="texte" id="texteArea_Recup" name='message' placeholder="Ecrire ici" required></textarea>
+				</form>
+				<form class="bloc_top">	
+					<input id='dateArea' type="datetime-local" required>
+					<input id='catArea' type="text" placeholder="Ajouter une catégorie" required>
+				</form>
+				<form class="bloc_bottom">
+					<input type="submit" id="btn_Submit_Send" value="Envoyer" required>		
+				</form>
+				<form class="bloc_switch">	
+					<input type="submit" id="btn_Submit_Suppr" value="Supprimer" required>
+					<input type="submit" id="btn_Submit_Modif" value="Modifier" required>
+				</form>
+			</div>
+			<h2></h2>
+		</section>
+
+		<section class=" section_globale">
+			<div class="content_tache_dom">
+				<h1>Ma liste des tâches à faire</h1>
+				<h2>Liste de catégories</h2>
+				<h4 class="sendCatArea"></h4>
+				<ul>
+				</ul>
+			</div>	
+		</section>
+	
+	</section>	
+
+
+
+
+<script src="js/jquery-3.2.1.min.js" type="text/javascript"></script>
+<script src="js/moment.js"></script>
+<script src="js/main.js" type="text/javascript"></script>
+
+
+</body>
+</html>

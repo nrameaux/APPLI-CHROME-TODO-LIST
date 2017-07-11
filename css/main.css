@@ -1,0 +1,272 @@
+/*%%%%%%%%%%%%%%------------- RESET -------------%%%%%%%%%%%%%%*/
+
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+}
+
+html{
+	font-size: 62.5%; /* 1rem pour 10px */
+}
+
+body{
+	font-size: 1.5rem; /* => 15px */
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 600;
+	font-style: normal;
+	background-color: #345;
+
+}
+
+a{
+	text-decoration: none;
+	color:#000;
+}
+
+li{
+	list-style-type: none;
+}
+
+img{
+	max-width: 100%; /* img ne depasse jamais le parent */
+}
+
+header{
+	position: fixed;
+	background-color: #FFF;
+	width: 100%;
+}
+
+.container{
+	width: 1200px;
+}
+
+/*@font-face {
+  font-family: 'FontAwesome';
+  src: url('font/fontawesome-webfont.eot?v=4.7.0');
+  src: url('font/fontawesome-webfont.eot?#iefix&v=4.7.0') format('embedded-opentype'), url('font/fontawesome-webfont.woff2?v=4.7.0') format('woff2'), url('font/fontawesome-webfont.woff?v=4.7.0') format('woff'), url('font/fontawesome-webfont.ttf?v=4.7.0') format('truetype'), url('font/fontawesome-webfont.svg?v=4.7.0#fontawesomeregular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}*/
+
+/*%%%%%%%%%%%%%%------------- DEBUT DE CSS -------------%%%%%%%%%%%%%%*/
+
+.content_global{
+	display: flex;
+}
+
+/*%%%%%%%%%%%%%%------------- SECTION FORMULAIRE -------------%%%%%%%%%%%%%%*/
+
+.section_formulaire{
+	position: relative;
+	height: 800px;
+	left:-500px;
+	width: 500px;
+	transition: all .6s ease-out;
+	background-color: rgba(222, 111, 222, .2);
+	opacity: 0;
+}
+.section_formulaire h1{
+	color: #fff;
+	font-size: 2rem;
+	margin-top: 20px;
+	margin-bottom: 50px;
+	text-align: center;
+	width: 500px;
+	height: 50px;
+	padding-top: 10px;
+}
+textarea{
+	outline-style: none;
+	border-radius:4px;
+	width: 450px;
+	height: 170px;
+	color: #222;
+	font-weight: 500;
+    font-size: 2rem;
+    line-height: 41px;
+    letter-spacing: 2px;
+	resize: none;
+	padding-left: 10px;
+}
+textarea::placeholder{
+	color: #222;
+  	font-size: 1.5rem;
+	font-weight: 400;
+	letter-spacing: 2px;
+	padding-left: 10px;
+}
+input{
+	outline-color: #ffb74d;
+	border-width:0 0 2px 0;
+	color: #222;
+	font-weight: 500;
+	border-radius: 3px;
+    font-size: 1.5rem;
+    line-height: 41px;
+    letter-spacing: 2px;
+	width: 220px;
+	margin-top: 20px; 
+	padding: 0 20px;
+}
+input::placeholder {
+  	color: #222;
+  	font-size: .9rem;
+	font-weight: 400;
+	letter-spacing: 2px;
+}
+#btn_Submit_Send{
+	height: 45px;
+	border:1px solid #fd5062;
+	background-color:#fd5062;
+	color: #fff;
+	text-align: center;
+	cursor: pointer;
+	width: 200px;
+	margin-top: 20px;
+	transition: all .8s ease-out;
+	text-transform: uppercase;
+}
+#btn_Submit_Modif, #btn_Submit_Suppr{
+	height: 45px;
+	border:1px solid #fd5062;
+	background-color:#fd5062;
+	color: #fff;
+	text-align: center;
+	cursor: pointer;
+	margin: 0 25px;
+	width: 200px;
+	margin-top: 20px;
+	transition: all .8s ease-out;
+	text-transform: uppercase;
+}
+.bloc_global{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: auto;
+}
+.bloc_top{
+	display: flex;
+	justify-content: space-between;
+	width: 90%;
+}
+.bloc_bottom{
+	display: flex;
+	justify-content: space-between;
+}
+.bloc_switch{
+	display: flex;
+	justify-content: space-between;
+}
+input#dateArea{
+	font-size: 1.2rem;
+}
+
+/*%%%%%%%%%%%%%%------------- SECTION GLOBALE -------------%%%%%%%%%%%%%%*/
+
+.section_globale{
+	transition: all .6s ease-out;
+	width: 30%;
+}
+.btn_access_Aggr{
+	position: absolute;
+	left: 10px;
+	top:10px;
+	background-color:#fd5062;
+	color:#222;
+	font-size: 4rem;
+	border-radius: 50px;
+	width: 55px;
+	padding-left:16px; 
+	transition: all .6s ease-out;
+}
+.btn_access_Dim{
+	position: absolute;
+	left: 60px;
+	top: 10px;
+	background-color:#fd5062;
+	color:#222;
+	margin-left: 10PX;
+	font-size: 4rem;
+	border-radius: 50px;
+	width: 55px;
+	padding-left:20px;
+	transition: all .6s ease-out;
+}
+.section_globale h1{
+	margin-top: 30px;
+	text-align: center;
+	font-size: 2rem;
+	color: #fff;
+}
+.section_globale h2{
+	text-align: center;
+	font-size: 2rem;
+	color: #fd5062;
+	margin-top: 20px;
+	margin-bottom: 30px;
+}
+.section_globale h4{
+	text-align: center;
+	font-size: 1.4rem;
+	color: #ffb74d;
+	margin-bottom: 10px;
+	cursor: pointer;
+	display: inline-flex;
+}
+.content_tache_dom{
+	width: 500px;
+	margin: 0 auto;
+	height: 500px;
+	overflow-y:scroll; 
+}
+ul{
+	margin-top: 60px;
+}
+li{
+	color: white;
+	font-size: 1.4rem;
+	margin-top: 10px;
+	cursor:pointer;
+}
+li::before{
+	content:"\f044";
+	padding-left: 60px;
+	padding-right: 20px;
+	float: left;
+	font-family: 'FontAwesome';
+	margin-top: 19px;
+}
+/*
+li::after{
+	content:"\f1f8";
+	float: right;
+	padding-right: 60px;
+	font-family: 'FontAwesome';
+	margin-top: 5px;
+}*/
+input[type="checkbox"] {
+    width: 30px;
+	margin-left: 20px;
+	-webkit-appearance: checkbox;
+    box-sizing: border-box;
+}
+
+.visuelLiCheck {
+  color: lightgray;
+  text-decoration: line-through;
+}
+/*%%%%%%%%%%%%%%------------- RESPONSIV -------------%%%%%%%%%%%%%%*/
+
+/*@media screen and (max-width: 1024px){
+.content_global{
+	width: auto;
+}
+}*/
+
+
+/*%%%%%%%%%%%%%%------------- FIN DE CSS -------------%%%%%%%%%%%%%%*/
